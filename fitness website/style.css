@@ -1,0 +1,525 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+}
+
+.header-section{
+    background: #F5FFFA;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    font-size: 1em;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1%;
+   
+}
+
+.logo img{
+   max-width: 170px;
+   height: auto;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.menu{
+    min-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-items{
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items:last-child{
+    font-size: 4em;
+}
+
+.nav-list{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-link{ 
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-link .padding{
+    display: block;
+}
+
+.workout{
+    display: block;
+    margin-top: 70px;
+    position: relative;
+}
+
+.workout-hover-menu{
+    display: none;
+    position: absolute;
+    width: auto;
+    margin-top: 114px;
+    text-align: center;
+    z-index: 1;
+    align-items: center;
+    background: #212432;
+    justify-content: space-around;
+}
+
+.workout:hover .workout-hover-menu{
+   display: flex;
+}
+
+.workout-hover-menu p{
+    color: white;
+    display: flex;
+    cursor: pointer;
+    margin: auto 50px;
+    padding: 45px 10px;
+    text-align: center;
+}
+
+.workout-hover-menu p:hover{
+    color: rgb(20, 20, 119);
+}
+
+.padding{
+    opacity: 0%;
+}
+
+#linked-icon{
+    padding: 45px 15px;
+    margin: 50px   auto;
+    font-size: large;
+}
+
+#linked-icon:hover{
+    color: rgb(20, 20, 119);
+}
+
+#special-nav-link{
+    color: rgb(20, 20, 119);
+}
+
+.nav-link:hover{
+    outline: #073c8c;
+  border-bottom: 5px  solid rgb(20, 20, 119);
+}
+
+.hero-section{
+    color: white;
+    background: -webkit-gradient(linear,left top,right bottom,from(#3d97ce),to(#12debb));
+    background: -webkit-linear-gradient(top left,#3d97ce 0%,#12debb 100%);
+    background: -o-linear-gradient(top left,#3d97ce 0%,#12debb 100%);
+    background: linear-gradient(to bottom right,#3d97ce 0%,#12debb 100%);
+}
+
+.hero-area{
+    display: flex;
+    padding-top: 70px;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content{
+    max-width: 50%;
+}
+
+.hero-header{
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+}
+
+.hero-text{
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+button{
+    color: white;
+    padding: 10px;
+    margin: 40px;
+    text-align: center;
+    min-width: 100px;
+    background: #212432;
+    border-radius: 5px;
+}
+
+button:hover{
+color: rgb(20, 20, 119);
+border: none;
+background: white;
+}
+
+.trainer-image-lists img{
+    max-width: 400px;
+    height: auto;
+    justify-content: flex-end;
+}
+
+.trainer-image-lists img:hover{
+    cursor: pointer;
+}
+
+.purchase-section, .detail-section{
+    width: 95%;
+    margin: 10px auto;
+    background: #f9e7f6;
+}
+
+.purchase-content{
+    max-width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.purchase-header{
+    padding-top: 80px;
+    font-size: 3em;
+}
+
+.purchase-text{
+    opacity: 70%;
+    font-size: 1.5em;
+    line-height: 1.7em;
+}
+
+.purchase-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.purchase-boxes > div{
+    margin: 5px 5px 80px 5px;
+    height: auto;
+    width: 250px;
+    font-size: 30px;
+    border: 2px solid white;
+    box-shadow: 2px 3px 3px;
+    display: block;
+}
+
+.first-box{
+    background:  transparent; 
+}
+
+.first-box p{
+    padding: 30px;
+    background: linear-gradient(to bottom right, #96d1ea, #073c8c);
+}
+
+.first-box P{
+    cursor: pointer;
+}
+
+.second-box{
+    background: transparent;
+}
+
+.second-box p{
+    padding: 30px;
+    background: linear-gradient(to bottom right, #95ef0e, #19c91a);
+}
+
+.second-box P{
+    cursor: pointer;
+}
+
+.last-box{
+    background: transparent;
+}
+
+.last-box p{
+    padding: 25px;
+    background: linear-gradient(to bottom right, #073c8c, #5f21a0);
+}
+
+.last-box P{
+    cursor: pointer;
+}
+
+.detail-container > div{
+    display: flex;
+    max-width:50%;
+    height: auto;
+}
+
+.detail-images{
+    width: 100%;
+    height: auto;
+}
+
+.title-details{
+    font-size: 2em;
+    padding: 30px 10px 10px 10px;
+}
+
+.detail-box-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail-box{
+    align-items: center;
+    width: 50%;
+    display: block;
+}
+
+.detail-box:hover{
+    cursor: pointer;
+}
+
+.detail-box:first-child{
+    background: #f1f1f1;
+}
+
+.detail-box:nth-child(2){
+    background: white;
+}
+
+.detail-box:nth-child(3){
+    background: black;
+}
+
+.detail-box:nth-child(3) p{
+    opacity: 100%;
+}
+
+.detail-box:nth-child(3) p{
+    color: white;
+}
+
+.detail-box:last-child{
+    background: #dbdbeb;
+}
+
+.content-details{
+    max-width: 80%;
+    align-items: center;
+    text-align: center;
+    padding-left: 10%;
+}
+
+.last-child{
+   opacity: 70%;
+}
+
+.content-details a{
+    color: rgb(20, 20, 119);
+    text-decoration: none;
+}
+
+.detail-box img{
+    width: 100%;
+    height: auto;
+}
+
+.community{
+    height: 80vh;
+    background-image: url("https://cloudfront.fitnessblender.com/assets/img/homepage/community-1440.webp");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.community-content{
+    max-width: 40%;
+    margin: 15px 0 0 30%;
+    line-height: 2em;
+    text-align: center;
+    display: inline-block;
+}
+.community-header{
+    font-size: 2.5em;
+    padding-bottom: 20px;
+}
+
+.community-header:hover{
+    cursor: pointer;
+}
+
+.community-text{
+    opacity: 70%;
+}
+
+.community-link{
+    color: rgb(20, 20, 119);
+   text-decoration: none;
+}
+
+.review-boxes{
+    display: flex;
+    margin: 6%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.review{
+    min-width: 22%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow:  auto;
+    cursor: pointer;
+    box-shadow: 2px 4px 16px rgb(190, 187, 187);
+    border: 3px  solid rgb(250, 239, 239);
+}
+
+.review img{
+    max-width: 90%;
+    height: 300px;
+}
+
+.review p{
+    padding: 25px;
+    font-size: .5m;
+}
+
+.footer{
+    color: white;
+    padding: 40px 0px;
+    background: #212432;
+}
+
+.about-us{
+    display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+    font-size: .8em;
+    line-height: 35px;
+    justify-content: space-around;
+}
+
+.footer-text a{
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.footer-text a:hover{
+    color: rgb(20, 20, 119);
+}
+
+.last-footer-text a{
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.last-footer-text a:hover{
+    color: rgb(20, 20, 119);
+}
+
+.footer-break-line{
+    max-width: 80%;
+    margin: 50px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.social-icons i{
+    display: flex;
+    display: inline;
+    margin: 2% 2%;
+    max-width: 100%;
+    color: white;
+    font-size: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons i:hover{
+    color: black;
+}
+
+#responsive-horizontal-line{
+    display: none;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.copyright{
+    color: white;
+    padding: 50px;
+    word-spacing: .5em;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 80%;
+}
+
+.ownership{
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.myname{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.myname:hover{
+    color:  rgb(20, 20, 119);
+}
+
+/*media query area*/
+@media screen and (max-width: 1024px){
+    .nav-items{
+        display: none;
+    }
+
+    .detail-box{
+        align-items: center;
+        width: 100%;
+        display: block;
+    }  
+}
+
+@media screen and (max-width: 830px){ 
+   .about-us{
+        display: block;
+        padding: 30px   15px;
+        margin: 30px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #responsive-horizontal-line{
+        display: block;
+    }
+}
